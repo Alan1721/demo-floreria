@@ -43,3 +43,41 @@ El proyecto se estructuró como una **Single Page Application (SPA)** de arquite
 ---
 
 ## 📦 Módulos Funcionales
+1. **Catálogo Segmentado:** Categorización dinámica (Romance, Cumpleaños, Aniversarios, Condolencias) con control de stock y etiquetas de temporada.
+2. **Motor de Personalización ("Diseña tu Ramo"):** Sistema interactivo por pasos para configuración de flor principal, estilo de envoltura (papel coreano, kraft, malla) y complementos de lujo con balance de costos automático.
+3. **Módulo de Logística y Tarjeta:** Restricción estricta de fechas pasadas para envíos, selección de franja diurna/vespertina y captura obligatoria de la dedicatoria.
+4. **Checkout Transaccional con Copiado Rápido:** Despliegue de credenciales bancarias con feedback visual (`Copied!`) y exportación inmediata del pedido formalizado hacia WhatsApp.
+
+---
+
+## 🗺️ Roadmap de Implementación
+
+### Fase 1: MVP Comercial & Validación (Estado Actual)
+- [x] Interfaz de usuario responsive enfocada en dispositivos móviles (Mobile-First).
+- [x] Catálogo digital con motor de armado personalizado.
+- [x] Logística integrada en carrito y dedicatorias de tarjetas.
+- [x] Módulo de transferencia bancaria con enlace asistido hacia WhatsApp.
+
+### Fase 2: Automatización Transaccional & Pagos Digitales
+- [ ] Implementación de pasarela de pagos con tarjeta de crédito/débito nacional e internacional.
+- [ ] Orquestación de backend liviano para firma criptográfica de peticiones y prevención de fraude.
+- [ ] Autenticación de usuarios mediante protocolo 3-D Secure (3DS2).
+- [ ] Despliegue de Webhooks transaccionales para actualización automática del estado de las órdenes.
+
+---
+
+## 🚀 Despliegue y Ejecución Local
+
+No requiere gestores de dependencias pesados (`npm`/`yarn`) para su previsualización:
+
+```bash
+# 1. Clonar el repositorio
+git clone [https://github.com/Alan1721/demo-floreria.git](https://github.com/Alan1721/demo-floreria.git)
+
+# 2. Navegar a la carpeta
+cd demo-floreria
+
+# 3. Ejecutar localmente
+# Puedes abrir directamente el archivo index.html en cualquier navegador moderno
+# o iniciar un servidor local rápido con Python:
+python -m http.server 8000
